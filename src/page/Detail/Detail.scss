@@ -1,0 +1,58 @@
+.detail__container {
+  width: 90%;
+  margin: 0 auto;
+
+  .movieTitle {
+    justify-content: center;
+
+    h2 {
+      font-size: 5vw;
+    }
+  }
+  .detail__information {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    color: #e5e5e5;
+
+    @media (max-width: 540px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .detail__genres {
+      color: #e5e5e5;
+    }
+
+    .detail__recommendation {
+      color: #67c167;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+
+  .detail__wrapper {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    align-items: flex-start;
+    gap: 75px;
+    margin-top: 75px;
+    color: #e5e5e5;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+
+      img {
+        width: 50%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}

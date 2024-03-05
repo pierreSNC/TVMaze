@@ -1,0 +1,91 @@
+.movieTitle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  padding: 50px 0;
+}
+.movieTitle h2 {
+  color: #e5e5e5;
+  font-weight: 600;
+  font-size: 30px;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.movies__hero {
+  height: 20vh;
+  background-image: url("https://www.wedrivit.com/blog/wp-content/uploads/2021/07/netflixfilmserieastuce.jpg");
+  background-size: cover;
+  position: relative;
+  margin-bottom: 75px;
+}
+.movies__hero h2 {
+  color: #e5e5e5;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3vw;
+  line-height: 0;
+}
+
+.input__search {
+  border: solid 2px #e5e5e5;
+  width: 33%;
+  height: 40px;
+  padding-left: 10px;
+  color: #e5e5e5;
+  font-size: 16px;
+  border-radius: 8px;
+  background: none;
+  margin-bottom: 75px;
+}
+.input__search:focus {
+  outline: none;
+}
+@media (max-width: 768px) {
+  .input__search {
+    width: 75%;
+  }
+}
+
+.allMovies__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 22.5%);
+  width: 90%;
+  gap: 40px;
+  margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .allMovies__wrapper {
+    grid-template-columns: repeat(3, 30%);
+  }
+}
+@media (max-width: 768px) {
+  .allMovies__wrapper {
+    grid-template-columns: repeat(2, 45%);
+  }
+}
+@media (max-width: 540px) {
+  .allMovies__wrapper {
+    grid-template-columns: repeat(1, 90%);
+  }
+}
+
+.allMovies__navigation {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 100px;
+}
+.allMovies__navigation button {
+  color: #e5e5e5;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=Movies.css.map */

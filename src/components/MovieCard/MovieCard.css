@@ -1,0 +1,72 @@
+.movieCard__container {
+  background: #141414;
+}
+.movieCard__container .movieCard__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.movieCard__container .movieCard__wrapper .movieCard__top {
+  height: 300px;
+}
+.movieCard__container .movieCard__wrapper .movieCard__top .movieCard__thumbnail {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top left;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.movieCard__container .movieCard__wrapper .movieCard__bottom {
+  background: #333;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  overflow: hidden;
+}
+.movieCard__container .movieCard__wrapper .movieCard__bottom .movieCard__title {
+  white-space: nowrap;
+  color: #ffffff;
+}
+.movieCard__container .movieCard__wrapper .information__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+  padding: 10px;
+}
+.movieCard__container .movieCard__wrapper .information__wrapper .thumb, .movieCard__container .movieCard__wrapper .information__wrapper .information {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 99%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #eaeaea;
+}
+.movieCard__container .movieCard__wrapper .information__wrapper .thumb i, .movieCard__container .movieCard__wrapper .information__wrapper .information i {
+  color: #eaeaea;
+}
+.movieCard__container .movieCard__wrapper .information__wrapper .thumb .addToFavorite, .movieCard__container .movieCard__wrapper .information__wrapper .information .addToFavorite {
+  font-size: 18px;
+  color: #67c167;
+}
+.movieCard__container .movieCard__wrapper .information__wrapper .thumb .removeToFavorite, .movieCard__container .movieCard__wrapper .information__wrapper .information .removeToFavorite {
+  font-size: 18px;
+  color: #eaeaea;
+}
+.movieCard__container .movieCard__wrapper .detail__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+}
+.movieCard__container .movieCard__wrapper .detail__wrapper .recommendation {
+  color: #67c167;
+  font-weight: 600;
+}
+.movieCard__container .movieCard__wrapper .detail__wrapper .movieCard__genres {
+  color: #eaeaea;
+  white-space: nowrap;
+}
+
+/*# sourceMappingURL=MovieCard.css.map */
